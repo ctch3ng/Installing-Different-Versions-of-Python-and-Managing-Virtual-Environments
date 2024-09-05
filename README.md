@@ -14,3 +14,10 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 ```
 
+### 3. Install Python 3.9 (or other versions)
+
+```
+sudo apt install python3.9
+```
+
+### 4. Install the `venv` Package for Python 3.9
