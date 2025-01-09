@@ -33,6 +33,8 @@ mkdir ~/.venvs
 ```
 
 ### 6. Create a New Virtual Environment `my-venv-name` with Python 3.9
+- Note 1: You can change `my-venv-name` to your preferred name.
+- Note 2: You can also specify Python versions other than 3.9; however, the latest version is not always the most supported one. Beware!
 
 ```
 python3.9 -m venv ~/.venvs/my-venv-name
@@ -58,5 +60,24 @@ pip3 --version
 
 ```
 deactivate
+```
+
+### 11. (Optional) Make the Virtual Environment as an IPython Kernel for Jupyter Notebook
+
+- Active the environment, `my-venv-name`, again
+
+```
+source ~/.venvs/my-venv-name/bin/activate
+```
+- Install `ipython` and `ipykernel`
+
+```
+pip install ipython ipykernel
+```
+
+- Configure the IPython Kernel for Jupyter Notebook
+
+```
+python -m ipykernel install --user --name=my-venv-name --display-name "My First Customised Kernel"
 ```
 
